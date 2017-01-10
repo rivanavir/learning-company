@@ -127,7 +127,7 @@ section{
       ul.top-nav{
         margin: 0 0 0 -185px;
         padding: 0;
-        min-height: 48px;
+        min-height: 40px;
         &.top{
           margin-bottom: 27px;
           padding-right: 180px;
@@ -137,7 +137,7 @@ section{
         li{
           display: inline-block;
           text-align: center;
-          min-width: 230px;
+          min-width: 200px;
           height: 40px;
           line-height: 40px;
           background: transparent;
@@ -158,7 +158,7 @@ section{
             border-radius: 30px;
             display: block;
             cursor: pointer;
-            position: relative;
+            position: absolute;
             box-shadow: 0 0 8px rgba(255,255,255,.45);
             -webkit-transition:all .5s ease-in-out;
             -ms-transition:all .5s ease-in-out;
@@ -177,27 +177,39 @@ section{
               -ms-transition:all .3s ease-in-out;
               transition:all .3s ease-in-out;
             }
-            &.blue{
+          }
+          &.blue {
+            a{
               background: rgba(#479ffc,.8);
             }
-            &.purple{
+          }
+          &.purple {
+            margin: 0 24px 0 14px;
+            a{
               background: rgba(#dbb0f5,.8);
-              margin: 0 24px 0 14px;
               top: -56px;
             }
-            &.aqua{
+          }
+          &.aqua {
+            a{
               background: rgba(#7aefd6,.8);
               top: -18px;
             }
-            &.red{
+          }
+          &.red {
+            a{
               background: rgba(#ff8885,.8);
             }
-            &.gold{
+          }
+          &.gold {
+            margin: 0 93px 0 49px;
+            a{
               background: rgba(#ffd28c,.8);
-              margin: 0 93px 0 49px;
               top: -22px;
             }
-            &.last{
+          }
+          &.last {
+            a{
               top: -12px;
             }
           }

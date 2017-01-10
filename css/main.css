@@ -108,18 +108,20 @@ section.head-section header .fix-nav .navbar-nav > li.logo-link { padding: 17px 
 section.head-section header .fix-nav .navbar-nav > li.logo-link a { line-height: 1; }
 section.head-section header .fix-nav .navbar-nav > li > a { line-height: 52px; }
 section.head-section .top-nav-wrap { position: absolute; z-index: -1; opacity: 0; top: 70%; margin-top: -63px; width: 100%; text-align: center; -webkit-transition: opacity .4s ease-in-out; -ms-transition: opacity .4s ease-in-out; transition: opacity .4s ease-in-out; }
-section.head-section .top-nav-wrap ul.top-nav { margin: 0 0 0 -185px; padding: 0; min-height: 48px; }
+section.head-section .top-nav-wrap ul.top-nav { margin: 0 0 0 -185px; padding: 0; min-height: 40px; }
 section.head-section .top-nav-wrap ul.top-nav.top { margin-bottom: 27px; padding-right: 180px; }
-section.head-section .top-nav-wrap ul.top-nav li { display: inline-block; text-align: center; min-width: 230px; height: 40px; line-height: 40px; background: transparent; bottom: 0; position: relative; cursor: pointer; -webkit-transition: bottom .4s ease-in-out; -ms-transition: bottom .4s ease-in-out; transition: bottom .4s ease-in-out; }
-section.head-section .top-nav-wrap ul.top-nav li a { height: 40px; color: white; text-decoration: none; font-family: 'Helvetica Neue LT Std Roman'; font-size: 16px; width: 40px; min-width: 200px; border-radius: 30px; display: block; cursor: pointer; position: relative; box-shadow: 0 0 8px rgba(255, 255, 255, 0.45); -webkit-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; transition: all .5s ease-in-out; line-height: 40px; }
+section.head-section .top-nav-wrap ul.top-nav li { display: inline-block; text-align: center; min-width: 200px; height: 40px; line-height: 40px; background: transparent; bottom: 0; position: relative; cursor: pointer; -webkit-transition: bottom .4s ease-in-out; -ms-transition: bottom .4s ease-in-out; transition: bottom .4s ease-in-out; }
+section.head-section .top-nav-wrap ul.top-nav li a { height: 40px; color: white; text-decoration: none; font-family: 'Helvetica Neue LT Std Roman'; font-size: 16px; width: 40px; min-width: 200px; border-radius: 30px; display: block; cursor: pointer; position: absolute; box-shadow: 0 0 8px rgba(255, 255, 255, 0.45); -webkit-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; transition: all .5s ease-in-out; line-height: 40px; }
 @media (min-width: 992px) { section.head-section .top-nav-wrap ul.top-nav li a:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); } }
 section.head-section .top-nav-wrap ul.top-nav li a > span { line-height: 44px; -webkit-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out; }
-section.head-section .top-nav-wrap ul.top-nav li a.blue { background: rgba(71, 159, 252, 0.8); }
-section.head-section .top-nav-wrap ul.top-nav li a.purple { background: rgba(219, 176, 245, 0.8); margin: 0 24px 0 14px; top: -56px; }
-section.head-section .top-nav-wrap ul.top-nav li a.aqua { background: rgba(122, 239, 214, 0.8); top: -18px; }
-section.head-section .top-nav-wrap ul.top-nav li a.red { background: rgba(255, 136, 133, 0.8); }
-section.head-section .top-nav-wrap ul.top-nav li a.gold { background: rgba(255, 210, 140, 0.8); margin: 0 93px 0 49px; top: -22px; }
-section.head-section .top-nav-wrap ul.top-nav li a.last { top: -12px; }
+section.head-section .top-nav-wrap ul.top-nav li.blue a { background: rgba(71, 159, 252, 0.8); }
+section.head-section .top-nav-wrap ul.top-nav li.purple { margin: 0 24px 0 14px; }
+section.head-section .top-nav-wrap ul.top-nav li.purple a { background: rgba(219, 176, 245, 0.8); top: -56px; }
+section.head-section .top-nav-wrap ul.top-nav li.aqua a { background: rgba(122, 239, 214, 0.8); top: -18px; }
+section.head-section .top-nav-wrap ul.top-nav li.red a { background: rgba(255, 136, 133, 0.8); }
+section.head-section .top-nav-wrap ul.top-nav li.gold { margin: 0 93px 0 49px; }
+section.head-section .top-nav-wrap ul.top-nav li.gold a { background: rgba(255, 210, 140, 0.8); top: -22px; }
+section.head-section .top-nav-wrap ul.top-nav li.last a { top: -12px; }
 section.head-section .top-nav-wrap.showBlock { opacity: 1; z-index: 1; }
 section.head-section .top-nav-wrap.showText ul.top-nav li a > span { position: absolute; opacity: 0; }
 section.head-section .top-nav-wrap.hideBlock ul.top-nav li { bottom: -40px; }
