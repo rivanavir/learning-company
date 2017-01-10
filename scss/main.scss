@@ -60,7 +60,7 @@ section{
       }
       .navbar-nav{
         >li{
-          padding: 35px 18px;
+          padding: 35px 13px;
           >a{
             padding: 0;
             color:white;
@@ -138,8 +138,8 @@ section{
           display: inline-block;
           text-align: center;
           min-width: 230px;
-          height: 48px;
-          line-height: 52px;
+          height: 40px;
+          line-height: 40px;
           background: transparent;
           bottom: 0;
           position: relative;
@@ -148,13 +148,13 @@ section{
           -ms-transition: bottom .4s ease-in-out;
           transition: bottom .4s ease-in-out;
           a{
-            height: 48px;
+            height: 40px;
             color:white;
             text-decoration: none;
             font-family: 'Helvetica Neue LT Std Roman';
-            font-size: 18px;
-            width: 48px;
-            min-width: 230px;
+            font-size: 16px;
+            width: 40px;
+            min-width: 200px;
             border-radius: 30px;
             display: block;
             cursor: pointer;
@@ -163,7 +163,7 @@ section{
             -webkit-transition:all .5s ease-in-out;
             -ms-transition:all .5s ease-in-out;
             transition:all .5s ease-in-out;
-            line-height: 55px;
+            line-height: 40px;
             @media (min-width: 992px){
               &:hover{
                 -webkit-transform: scale(1.1);
@@ -172,7 +172,7 @@ section{
               }
             }
             >span{
-              line-height: 52px;
+              line-height: 44px;
               -webkit-transition:all .3s ease-in-out;
               -ms-transition:all .3s ease-in-out;
               transition:all .3s ease-in-out;
@@ -234,7 +234,7 @@ section{
     }
     h2{
       font-family: 'Helvetica Neue LT Std Lt';
-      font-size: 62px;
+      font-size: 52px;
       color:white;
       text-transform: uppercase;
       position: absolute;
@@ -385,10 +385,16 @@ section{
           &:first-child{
             float: left;
             text-align: left;
+            h4.bottom-title{
+              left: 0;
+            }
           }
           &:last-child{
             float: right;
             text-align: right;
+            h4.bottom-title{
+              right: 0;
+            }
           }
         }
         .dev-narrow{
@@ -402,6 +408,37 @@ section{
           &:hover{
             .dev-text-wrap{
               top: 0;
+            }
+            h4.bottom-title{
+              bottom: -50px;
+            }
+          }
+          h4.bottom-title{
+            font-family: 'Helvetica Neue LT Std Roman';
+            font-size: 25px;
+            color:white;
+            text-transform: uppercase;
+            line-height: 1;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            z-index: 20;
+            padding: 16px 15px 9px;
+            margin: 0;
+            -webkit-transition:all .4s ease-in-out;
+            -ms-transition:all .4s ease-in-out;
+            transition:all .4s ease-in-out;
+            &.blue{
+              background: rgba(#479ffc,.8);
+            }
+            &.purple{
+              background: rgba(#dbb0f5,.8);
+            }
+            &.aqua{
+              background: rgba(#7aefd6,.8);
+            }
+            &.red{
+              background: rgba(#ff8885,.8);
             }
           }
           .dev-text-wrap{
@@ -589,10 +626,10 @@ section{
           display: block;
           margin: 0 auto;
           background: #4cb8a1;
-          height: 50px;
+          height: 35px;
           border-radius: 30px;
-          padding: 12px 30px;
-          line-height: 28px;
+          padding: 0 30px;
+          line-height: 35px;
           cursor:pointer;
           color:#fff;
           font-size: 17px;
