@@ -34,4 +34,11 @@ $(document).ready(function () {
   setTimeout(function () {
     $('.top-nav-wrap').removeClass('showText');
   }, 2000);
+
+  $("#submit").on("click",function(e){
+    console.log(e);
+    //the ajax call returns true if the email exists
+  });
+
+
 });
