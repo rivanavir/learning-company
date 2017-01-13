@@ -104,8 +104,8 @@ header .fix-nav .navbar-nav > li.logo-link { padding: 17px 62px 18px; }
 header .fix-nav .navbar-nav > li.logo-link a { line-height: 1; }
 header .fix-nav .navbar-nav > li > a { line-height: 52px; }
 
-.price-page .navbar { background-color: #313944 !important; }
-.price-page .navbar-nav, .price-page .fix-nav { position: relative; background-color: transparent !important; }
+.static-header .navbar { background-color: #313944 !important; }
+.static-header .navbar-nav, .static-header .fix-nav { position: relative; background-color: transparent !important; }
 
 section h2.sect-title { font-family: 'Helvetica Neue LT Std Lt'; font-size: 44px; color: #686868; margin: 0; line-height: 1; text-transform: uppercase; text-align: center; }
 section p.sub-title { text-transform: uppercase; font-family: 'Helvetica Neue LT Std Th'; font-size: 18px; color: white; text-align: center; }
@@ -275,6 +275,22 @@ section.price-page-section .final-row .final-block .final-text h4 { font-family:
 section.price-page-section .final-row .final-block .final-text h4:after { position: absolute; content: ''; display: block; top: 100%; left: 0; width: 60px; height: 1px; background: #727981; }
 section.price-page-section .final-row .final-block .final-text h4:last-child { margin-bottom: 0; }
 section.price-page-section .final-row .final-block .final-text h4:last-child:after { display: none; }
+section.interactive-section { padding: 70px 0; background: #ebf3f6; }
+section.interactive-section .slide-wrap .slide-inner { box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); }
+section.interactive-section .slide-wrap .slide-inner .slide-block { position: relative; display: block; }
+section.interactive-section .slide-wrap .slide-inner .slide-block img { width: 100%; }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 17px; }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text.aqua { background: rgba(122, 239, 214, 0.8); }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text.red { background: rgba(255, 136, 133, 0.8); }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text.blue { background: rgba(222, 245, 253, 0.8); }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text.purple { background: rgba(219, 176, 245, 0.8); }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text.gold { background: rgba(255, 210, 140, 0.8); }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text h4 { font-family: 'Helvetica Neue LT Std Roman'; font-size: 25px; color: #686868; text-transform: uppercase; margin-top: 7px; margin-bottom: 7px; }
+section.interactive-section .slide-wrap .slide-inner .slide-block .slide-text p { font-family: 'Helvetica Neue LT Std Th'; font-size: 18px; color: #686868; margin-bottom: 0; line-height: 1.2; }
+section.interactive-section .slide-wrap .slide-link { padding-top: 45px; }
+section.interactive-section .slide-wrap .slide-link ul.link-list { width: 100%; text-align: center; margin-bottom: 100px; }
+section.interactive-section .slide-wrap .slide-link ul.link-list li { display: inline-block; padding: 7px 10px; }
+section.interactive-section .slide-wrap .slide-link ul.link-list li a { font-family: 'Helvetica Neue LT Std Roman'; font-size: 20px; color: #686868; text-transform: uppercase; }
 
 .contact-wrap { width: 650px; margin: 0 auto; }
 .contact-wrap form.contact-form { background: #fff; padding: 50px 75px; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }

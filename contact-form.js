@@ -5,7 +5,7 @@ document.write(`<form class="contact-form" id="contactForm" method="post" name="
   </div>\
   <div class="form-group">\
     <label for="email">Email</label>\
-    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required" oninvalid="this.setCustomValidity('Please enter a valid email address')">\
+    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required">\
   </div>\
   <div class="form-group">\
     <label for="message">Message</label>\

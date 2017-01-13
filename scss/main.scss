@@ -89,7 +89,7 @@ header{
   }
 }
 
-.price-page{
+.static-header{
   .navbar-header,
   .navbar-collapse{
 
@@ -1069,6 +1069,77 @@ section{
               &:after{
                 display: none;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.interactive-section{
+    padding: 70px 0;
+    background: #ebf3f6;
+    .slide-wrap{
+      .slide-inner{
+        box-shadow: 0 0 30px rgba(0,0,0,.15);
+        .slide-block{
+          position: relative;
+          display: block;
+          img{
+            width: 100%;
+          }
+          .slide-text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 17px;
+            &.aqua{
+              background: rgba(#7aefd6,.8);
+            }
+            &.red{
+              background: rgba(#ff8885,.8);
+            }
+            &.blue{
+              background: rgba(#def5fd,.8);
+            }
+            &.purple{
+              background: rgba(#dbb0f5,.8);
+            }
+            &.gold{
+              background: rgba(#ffd28c,.8);
+            }
+            h4{
+              font-family: 'Helvetica Neue LT Std Roman';
+              font-size: 25px;
+              color:#686868;
+              text-transform: uppercase;
+              margin-top: 7px;
+              margin-bottom: 7px;
+            }
+            p{
+              font-family: 'Helvetica Neue LT Std Th';
+              font-size: 18px;
+              color:#686868;
+              margin-bottom: 0;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+      .slide-link{
+        padding-top: 45px;
+        ul.link-list{
+          width: 100%;
+          text-align: center;
+          margin-bottom: 100px;
+          li{
+            display: inline-block;
+            padding: 7px 10px;
+            a{
+              font-family: 'Helvetica Neue LT Std Roman';
+              font-size: 20px;
+              color:#686868;
+              text-transform: uppercase;
             }
           }
         }

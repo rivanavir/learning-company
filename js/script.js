@@ -35,6 +35,13 @@ $(document).ready(function () {
     $('.top-nav-wrap').removeClass('showText');
   }, 2000);
 
+  $('#contactForm').on('submit',function (e) {
+    console.log(e.target);
+    $('#email')[0].setCustomValidity('Please enter a valid email address.');
+    e.preventDefault();
+  })
+
+  /* Price steps */
   if($('#pricePage').hasClass('price-page-section')){
     var stepPercent = 25;
     var startWidth = 0;
@@ -97,5 +104,10 @@ $(document).ready(function () {
       checkIcon.fadeOut(100);
       $('#'+blockList[i].id).addClass('active').fadeIn(1000);
     }
+  }
+
+  /* Slide code */
+  if($('.interactive').hasClass('interactive-section')){
+
   }
 });
