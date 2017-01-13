@@ -34,4 +34,67 @@ $(document).ready(function () {
   setTimeout(function () {
     $('.top-nav-wrap').removeClass('showText');
   }, 2000);
+
+  var stepPercent = 25;
+  var startWidth = 0;
+  var checkBlock;
+  var progressBar = $('.progress-bar');
+  var mainInner = $('.price-page-inner');
+  var checkIcon = mainInner.find('.check-wrap');
+  var resetButton = $('.price-page-inner .restart');
+  var blockList = [];
+  var count = 0;
+
+  $('.price-page-block').each(function () {
+    checkBlock = $('.question-wrap .question-block-inner');
+    blockList.push(this);
+  })
+
+  changeStep(count);
+
+  checkBlock.on('click', function () {
+    count++;
+    var answer = $(this).data('answer');
+    startWidth += stepPercent;
+    if(startWidth >= 100){
+      startWidth = 100;
+    }
+    checkIcon.fadeIn(500);
+    setTimeout(function () {
+      progressBar.css('width', startWidth+'%');
+      changeStep(count);
+    }, 500);
+  })
+  resetButton.on('click', function () {
+    startWidth = 0;
+    mainInner.find('.active').removeClass('active');
+    mainInner.find('.price-page-block').first().addClass('active');
+    progressBar.css('width', startWidth+'%');
+    checkIcon.fadeOut(100);
+    count = 0;
+    changeStep(count);
+  })
+
+  $('#contactForm').on('submit',function (e) {
+    var data = $(this).serializeArray();
+    checkIcon.fadeIn(500);
+    setTimeout(function () {
+      changeStep(5);
+    }, 500);
+    e.preventDefault();
+  })
+
+  function changeStep(i) {
+    console.log(i);
+    $.each(blockList, function (index, val) {
+      $(val).hide();
+    })
+    if(i == 4){
+      setTimeout(function () {
+        progressBar.parents('.progress-wrap').hide();
+      }, 800);
+    }
+    checkIcon.fadeOut(100);
+    $('#'+blockList[i].id).addClass('active').fadeIn(1000);
+  }
 });
