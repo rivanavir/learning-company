@@ -97,7 +97,8 @@ $(document).ready(function () {
 
     function changeStep(i) {
       $.each(blockList, function (index, val) {
-        $(val).hide();
+        // $(val).hide();
+        $(val).removeClass('active');
       })
       if(i == 4 || i == 5){
         setTimeout(function () {

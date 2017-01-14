@@ -994,6 +994,10 @@ section{
                 text-transform: uppercase;
                 margin-bottom: 0;
                 line-height: 1.6;
+                -webkit-user-select: none;  /* Chrome all / Safari all */
+                -moz-user-select: none;     /* Firefox all */
+                -ms-user-select: none;      /* IE 10+ */
+                user-select: none;
               }
             }
           }
@@ -1150,20 +1154,23 @@ section{
             left: 0;
             right: 0;
             padding: 10px 17px;
-            &.aqua{
-              background: rgba(#7aefd6,.8);
+            &.grey{
+              background: rgba(#eeeeee,.8);
             }
-            &.red{
-              background: rgba(#ff8885,.8);
+            &.rose{
+              background: rgba(#fff4f1,.8);
             }
-            &.blue{
-              background: rgba(#def5fd,.8);
+            &.light-grey{
+              background: rgba(#f7f6f6,.8);
             }
-            &.purple{
-              background: rgba(#dbb0f5,.8);
+            &.light-aqua{
+              background: rgba(#e5feff,.8);
             }
-            &.gold{
-              background: rgba(#ffd28c,.8);
+            &.light-green{
+              background: rgba(#faffeb,.8);
+            }
+            &.light-purple{
+              background: rgba(#e6edfb,.8);
             }
             h4{
               font-family: 'Helvetica Neue LT Std Roman';
