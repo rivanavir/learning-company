@@ -43,7 +43,7 @@ $(document).ready(function () {
 
   /* Price steps */
   if($('#pricePage').hasClass('price-page-section')){
-    var stepPercent = 25;
+    var stepPercent = 30;
     var startWidth = 0;
     var checkBlock;
     var progressBar = $('.progress-bar');
@@ -135,6 +135,6 @@ $(document).ready(function () {
       $(this).text(linkArr[index]);
     })
   }
-  
+
   afterSlideInit();
 });
