@@ -1129,24 +1129,18 @@ section{
     padding: 70px 0;
     background: #ebf3f6;
     .slide-wrap{
+      position: relative;
+      padding-bottom: 150px;
       .slide-inner{
         box-shadow: 0 0 30px rgba(0,0,0,.15);
-        overflow: hidden;
-        position: relative;
         .slide-block{
-          position: absolute;
-          left: 0;
-          top: 0;
-          z-index: 0;
-          display: block;
-          -webkit-transition:all .4s ease-in-out;
-          -ms-transition:all .4s ease-in-out;
-          transition:all .4s ease-in-out;
+          position: relative;
           &.active{
             z-index: 10;
+            left: 0;
           }
           img{
-            width: 100%;
+            width: 1005px;
           }
           .slide-text{
             position: absolute;
@@ -1189,23 +1183,65 @@ section{
             }
           }
         }
-      }
-      .slide-link{
-        padding-top: 45px;
-        ul.link-list{
-          width: 100%;
+        button.slick-arrow{
+          @media (max-width: 991px){
+            display: none;
+          }
+        }
+        button.slick-arrow{
+          -webkit-transform: rotate(45deg) translate(0, 0);
+          -ms-transform: rotate(45deg) translate(0, 0);
+          transform: rotate(45deg) translate(0, 0);
+        }
+        button.slick-prev,
+        button.slick-next{
+          width: 80px;
+          height: 80px;
+          margin-top: -40px;
+          background: transparent;
+          &:before{
+            content: '';
+          }
+        }
+        button.slick-prev{
+          border-left: 3px solid #737374;
+          border-bottom: 3px solid #737374;
+          left: auto;
+          right: 105%;
+        }
+        button.slick-next{
+          border-top: 3px solid #737374;
+          border-right: 3px solid #737374;
+          right: auto;
+          left: 105%;
+        }
+        .slick-dots{
+          bottom:auto;
+          top: 105%;
           text-align: center;
-          margin-bottom: 100px;
           li{
             display: inline-block;
             padding: 7px 10px;
-            a{
-              font-family: 'Helvetica Neue LT Std Roman';
-              font-size: 20px;
-              color:#686868;
-              text-transform: uppercase;
+            font-family: 'Helvetica Neue LT Std Roman';
+            font-size: 20px;
+            color:#686868;
+            text-transform: uppercase;
+            width: auto;
+            height: auto;
+            margin: 0;
+            &:hover{
+              text-decoration: underline;
             }
           }
+        }
+      }
+      .slide-link{
+        padding-top: 45px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        ul.link-list{
+          width: 100%;
         }
       }
     }
