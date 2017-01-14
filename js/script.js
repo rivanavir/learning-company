@@ -27,10 +27,10 @@ $(document).ready(function () {
   })
 
   setTimeout(function () {
-    $('.top-nav-wrap').addClass('showBlock');
   }, 500);
   setTimeout(function () {
     $('.top-nav-wrap').removeClass('hideBlock');
+    $('.top-nav-wrap').addClass('showBlock');
   }, 1200);
   setTimeout(function () {
     $('.top-nav-wrap').removeClass('showText');
