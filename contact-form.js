@@ -1,4 +1,4 @@
-document.write(`<form class="contact-form" id="contactForm" method="post" name="name">\
+document.write('<form class="contact-form" id="contactForm" method="post" name="name">\
   <div class="form-group">\
     <label for="name">Name</label>\
     <input type="text" class="form-control" name="name" id="name" placeholder="Your name">\
@@ -15,4 +15,4 @@ document.write(`<form class="contact-form" id="contactForm" method="post" name="
     Captcha place\
   </div>\
   <button type="submit" id="submit" class="btn btn-contact">Click here to Finish</button>\
-</form>`);
+</form>');
